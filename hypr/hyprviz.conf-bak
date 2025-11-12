@@ -1,0 +1,22 @@
+# hyprviz configuration (created automatically)
+
+general {
+    gaps_out = 5
+    layout = dwindle
+    resize_on_border = false
+    col.active_border = rgba(D7DA87FF)
+    col.inactive_border = rgba(52562EFF)
+    col.nogroup_border = rgba(FFAAFFFF)
+    col.nogroup_border_active = rgba(FF00FFFF)
+}
+
+decoration {
+    rounding = 3
+    inactive_opacity = 0.75
+}
+
+input {
+    kb_layout = fr
+    numlock_by_default = true
+    scroll_method = edge
+}
