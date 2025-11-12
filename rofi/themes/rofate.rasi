@@ -1,0 +1,65 @@
+* {
+bg: #1D1B0F7F;
+bg2: #F1EFC8;
+fg: #F1EFC8;
+fg2: #000000;
+br: #52562E;
+hl: #D7DA87;
+border: 0;
+margin: 0;
+padding: 0;
+spacing: 0;
+background-color: #00000000;
+text-color: @fg;
+}
+window {
+width: 45%;
+transparency: "real";
+location: center;
+anchor: center;
+background-color: @bg;
+border-color: @hl;
+border: 1px;
+border-radius: 3px;
+}
+inputbar {
+children: [prompt, textbox-prompt-colon, entry];
+margin: 5px;
+padding: 5px;
+background-color: @bg2;
+text-color: @fg2;
+border-radius: 3px;
+}
+prompt {
+text-color: @fg2;
+}
+textbox-prompt-colon {
+expand: false;
+str: ":";
+margin: 0 1em 0 1em;
+text-color: @fg2;
+}
+entry {
+placeholder: "Search";
+text-color: @fg2;
+}
+listview {
+flow: horizontal;
+fixed-columns: true;
+columns: 4;
+lines: 3;
+}
+element {
+orientation: vertical;
+margin: 5px;
+padding: 5px;
+border-color: @br;
+border: 1px;
+border-radius: 3px;
+}
+element-icon {
+size: 100px;
+}
+element selected {
+border-color: @hl;
+}
