@@ -1,0 +1,28 @@
+@define-color bg rgba(29, 27, 15, 0.5);
+@define-color bg2 #F1EFC8;
+@define-color fg #F1EFC8;
+@define-color fg2 #1D1B0F;
+@define-color br #52562E;
+@define-color hl #D7DA87;
+
+* {
+    font-family: "VCR OSD Mono";
+    font-size: 18px;
+    border: 0;
+    margin: 0 2px;
+    padding: 0;
+    min-height: 0;
+
+    transition: none;
+    color: @fg;
+}
+window#waybar {
+    background: @bg;
+    border-bottom: 1px solid @hl;
+    
+}
+#workspaces button {
+    background: transparent;
+    color: blue;
+    text-shadow: none;
+}

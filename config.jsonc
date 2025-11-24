@@ -1,0 +1,44 @@
+{   "reload_style_on_change": true,
+    "layer": "top",
+    "position": "top",
+    "height": 18,
+    "modules-left": ["custom/poweroff","clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["cpu","memory","disk"],
+
+    "custom/poweroff": {
+        "format": "OFF",
+        "on-click": "systemctl poweroff",
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%H:%M %Y-%m-%d}",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "X",
+            "active": "+"
+        },
+        "persistent-workspaces": {
+            "*": 10
+        }
+    },
+    "cpu": {
+        "format": "CPU {usage}%,",
+        "tooltip": true,
+        "interval": 1
+    },
+    "memory": {
+        "format": "RAM {}%,",
+        "tooltip": true,
+        "interval": 1
+    },
+    "disk": {
+        "format": "DISK {percentage_used}%,",
+        "interval": 30,
+        "path": "/"
+    }
+
+}
