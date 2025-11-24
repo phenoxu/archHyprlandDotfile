@@ -1,3 +1,3 @@
 # archHyprlandDotfile
-my config for hyprland, rofi, and soon waybar
-also you don't really have to read this
+my config for hyprland, rofi, waybar
+also you don't really have to read README.md
